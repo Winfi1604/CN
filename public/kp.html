@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informasi Kenaikan Pangkat">
+  <title>Informasi Kenaikan Pangkat</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    header {
+      background: #123b67;
+      color: white;
+      padding: 18px 24px;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { font-size: 20px; font-weight: 700; }
+    .back {
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 8px;
+      padding: 10px 15px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 32px auto;
+      padding: 0 20px 50px;
+    }
+    .hero, .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 3px 16px rgba(0,0,0,.07);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 22px;
+    }
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      color: #2563eb;
+    }
+    h1 { margin: 8px 0; font-size: 32px; }
+    h2 { font-size: 24px; margin-top: 0; }
+    p { line-height: 1.7; color: #64748b; }
+    .card {
+      padding: 26px;
+      margin: 22px 0;
+      scroll-margin-top: 25px;
+    }
+    .number {
+      display: inline-flex;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #e8f0fe;
+      color: #123b67;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+    .btn-primary {
+      background: #123b67;
+      color: white;
+    }
+    .btn-secondary {
+      background: #eef2f7;
+      color: #123b67;
+    }
+    .step {
+      padding: 14px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .step:last-child { border-bottom: 0; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">Website Kepegawaian</div>
+      <a class="back" href="index.html">← Kembali ke Beranda</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">LAYANAN KEPEGAWAIAN</span>
+      <h1>Informasi Kenaikan Pangkat</h1>
+      <p>
+        Silakan pilih informasi yang ingin dilihat melalui submenu
+        Kenaikan Pangkat (KP).
+      </p>
+    </section>
+
+    <section id="syarat-umum" class="card">
+      <div class="number">01</div>
+      <h2>Syarat Umum Kenaikan Pangkat</h2>
+      <p>
+        Halaman informasi syarat umum Kenaikan Pangkat. Persyaratan dan
+        dokumen dapat disesuaikan dengan ketentuan kepegawaian yang berlaku
+        di instansi.
+      </p>
+      <a class="btn btn-secondary" href="#alur-pengajuan">Lanjut ke Alur Pengajuan ↓</a>
+    </section>
+
+    <section id="alur-pengajuan" class="card">
+      <div class="number">02</div>
+      <h2>Alur Pengajuan</h2>
+      <p>Alur pengajuan Kenaikan Pangkat terdiri dari:</p>
+
+      <div class="step">
+        <strong>Pemutakhiran Data</strong>
+        <p>
+          Lakukan pemutakhiran data kepegawaian melalui ASN Digital BKN.
+        </p>
+        <a class="btn btn-primary"
+           href="https://asndigital.bkn.go.id/?utm_source=chatgpt.com"
+           target="_blank" rel="noopener noreferrer">
+          Buka ASN Digital BKN ↗
+        </a>
+      </div>
+
+      <div class="step">
+        <strong>Pemantauan Status KP</strong>
+        <p>
+          Pantau status usulan Kenaikan Pangkat melalui Monitoring SIASN BKN.
+        </p>
+        <a class="btn btn-primary"
+           href="https://monitoring-siasn.bkn.go.id/?utm_source=chatgpt.com"
+           target="_blank" rel="noopener noreferrer">
+          Buka Monitoring SIASN BKN ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Website Kepegawaian — Informasi Kenaikan Pangkat
+  </footer>
+</body>
+</html>
