@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Kepegawaian - layanan informasi dan administrasi kepegawaian.">
+  <title>Website Kepegawaian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="Beranda">
+        <span class="brand-mark">KP</span>
+        <span>
+          <strong>Kepegawaian</strong>
+          <small>Portal Informasi Kepegawaian</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false">
+            Layanan Kepegawaian ▾
+          </button>
+          <div class="dropdown-menu">
+            <a href="#duk">Daftar Urutan Kepangkatan (DUK)</a>
+            <a href="#kp">Kenaikan Pangkat (KP)</a>
+            <a href="#kgb">Kenaikan Gaji Berkala (KGB)</a>
+          </div>
+        </div>
+        <a href="#informasi">Informasi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="container hero-content">
+        <div>
+          <span class="eyebrow">PORTAL KEPEGAWAIAN</span>
+          <h1>Informasi dan Layanan Kepegawaian yang Mudah Diakses</h1>
+          <p>
+            Portal sederhana untuk membantu menyajikan informasi profil,
+            layanan administrasi kepegawaian, serta pengumuman penting.
+          </p>
+          <a class="btn btn-primary" href="#layanan">Lihat Layanan</a>
+        </div>
+        <div class="hero-card">
+          <div class="hero-icon">✓</div>
+          <h3>Layanan Kepegawaian</h3>
+          <p>DUK, Kenaikan Pangkat, dan Kenaikan Gaji Berkala.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="profil" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">PROFIL</span>
+          <h2>Tentang Kepegawaian</h2>
+          <p>
+            Halaman ini dapat digunakan sebagai pusat informasi dan layanan
+            administrasi kepegawaian di lingkungan instansi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">LAYANAN</span>
+          <h2>Layanan Kepegawaian</h2>
+          <p>Pilih layanan untuk melihat informasi singkat.</p>
+        </div>
+
+        <div class="cards">
+          <article id="duk" class="card">
+            <div class="card-icon">01</div>
+            <h3>Daftar Urutan Kepangkatan (DUK)</h3>
+            <p>
+              Informasi mengenai daftar urutan kepangkatan dan data
+              kepegawaian sesuai ketentuan yang berlaku.
+            </p>
+            <a href="#informasi">Selengkapnya →</a>
+          </article>
+
+          <article id="kp" class="card">
+            <div class="card-icon">02</div>
+            <h3>Kenaikan Pangkat (KP)</h3>
+            <p>
+              Informasi persyaratan, dokumen, dan proses pengajuan kenaikan
+              pangkat pegawai.
+            </p>
+            <a href="#informasi">Selengkapnya →</a>
+          </article>
+
+          <article id="kgb" class="card">
+            <div class="card-icon">03</div>
+            <h3>Kenaikan Gaji Berkala (KGB)</h3>
+            <p>
+              Informasi persyaratan dan administrasi kenaikan gaji berkala
+              bagi pegawai.
+            </p>
+            <a href="#informasi">Selengkapnya →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="informasi" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">INFORMASI</span>
+          <h2>Informasi Terbaru</h2>
+        </div>
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-date">INFO</span>
+            <div>
+              <h3>Administrasi Kepegawaian</h3>
+              <p>Silakan lengkapi dokumen sesuai persyaratan layanan yang dipilih.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-date">INFO</span>
+            <div>
+              <h3>Pengumuman</h3>
+              <p>Informasi dan jadwal layanan dapat diperbarui oleh administrator.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>Website Kepegawaian</strong>
+        <p>Portal Informasi dan Layanan Kepegawaian</p>
+      </div>
+      <p>© <span id="year"></span> Website Kepegawaian. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
