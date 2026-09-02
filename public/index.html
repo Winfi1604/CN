@@ -7,51 +7,47 @@
   <title>Website Kepegawaian</title>
   <link rel="stylesheet" href="style.css">
 
-  <style>
-    .submenu {
-      position: relative;
-    }
-
-    .submenu-toggle {
-      width: 100%;
-      border: 0;
-      background: transparent;
-      color: inherit;
-      font: inherit;
-      text-align: left;
-      cursor: pointer;
-      padding: 10px 14px;
-    }
-
-    .submenu-menu {
-      display: none;
-      min-width: 250px;
-    }
-
-    .submenu:hover .submenu-menu,
-    .submenu:focus-within .submenu-menu {
-      display: block;
-    }
-
-    .submenu-menu a {
-      display: block;
-      white-space: nowrap;
-    }
-
-    @media (min-width: 769px) {
+    <style>
+      .dropdown-submenu { position: relative; }
+      .dropdown-submenu > .submenu-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
       .submenu-menu {
+        display: none;
         position: absolute;
         left: 100%;
         top: 0;
+        min-width: 245px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 12px 28px rgba(0,0,0,.12);
+        padding: 8px;
+        z-index: 20;
       }
-    }
-
-    @media (max-width: 768px) {
-      .submenu-menu {
-        padding-left: 15px;
+      .dropdown-submenu:hover > .submenu-menu,
+      .dropdown-submenu:focus-within > .submenu-menu {
+        display: block;
       }
-    }
-  </style>
+      .submenu-menu a {
+        display: block;
+        padding: 10px 12px;
+        white-space: normal;
+      }
+      @media (max-width: 768px) {
+        .submenu-menu {
+          position: static;
+          min-width: 0;
+          margin-left: 12px;
+          box-shadow: none;
+        }
+        .dropdown-submenu:hover > .submenu-menu {
+          display: block;
+        }
+      }
+    </style>
 
 </head>
 <body>
@@ -77,16 +73,16 @@
             Layanan Kepegawaian ▾
           </button>
           <div class="dropdown-menu">
-            <a href="duk.html">Daftar Urutan Kepangkatan (DUK)</a>
-            <div class="submenu">
-              <button class="submenu-toggle" type="button" aria-expanded="false">
-                Kenaikan Pangkat (KP) ▸
-              </button>
+            <a href="#duk">Daftar Urutan Kepangkatan (DUK)</a>
+
+            <div class="dropdown-submenu">
+              <a href="#kp" class="submenu-toggle">Kenaikan Pangkat (KP) ▸</a>
               <div class="submenu-menu">
-                <a href="kp.html#syarat-umum">Syarat Umum Kenaikan Pangkat</a>
-                <a href="kp.html#alur-pengajuan">Alur Pengajuan</a>
+                <a href="syarat-umum-kp.html">Syarat Umum Kenaikan Pangkat</a>
+                <a href="alur-pengajuan-kp.html">Alur Pengajuan</a>
               </div>
             </div>
+
             <a href="#kgb">Kenaikan Gaji Berkala (KGB)</a>
           </div>
         </div>
@@ -144,7 +140,7 @@
               Informasi mengenai daftar urutan kepangkatan dan data
               kepegawaian sesuai ketentuan yang berlaku.
             </p>
-            <a href="duk.html">Lihat Daftar Urut Kepangkatan →</a>
+            <a href="#informasi">Selengkapnya →</a>
           </article>
 
           <article id="kp" class="card">
@@ -169,53 +165,8 @@
         </div>
       </div>
     </section>
-    <section id="kp-informasi" class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">LAYANAN KP</span>
-          <h2>Informasi Kenaikan Pangkat</h2>
-          <p>Informasi mengenai persyaratan dan alur pengajuan Kenaikan Pangkat (KP).</p>
-        </div>
 
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon">01</div>
-            <h3>Syarat Umum KP</h3>
-            <p>
-              Informasi mengenai syarat umum yang perlu dipenuhi dalam proses
-              pengajuan Kenaikan Pangkat sesuai ketentuan yang berlaku.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">02</div>
-            <h3>Alur Pengajuan</h3>
-            <p>
-              Alur pengajuan Kenaikan Pangkat meliputi pemutakhiran data dan
-              pemantauan status KP.
-            </p>
-
-            <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:18px;">
-              <a class="btn btn-primary"
-                 href="https://asndigital.bkn.go.id/"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Pemutakhiran Data ↗
-              </a>
-
-              <a class="btn btn-primary"
-                 href="https://monitoring-siasn.bkn.go.id/"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Pemantauan Status KP ↗
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-<section id="informasi" class="section">
+    <section id="informasi" class="section">
       <div class="container">
         <div class="section-heading">
           <span class="eyebrow">INFORMASI</span>
