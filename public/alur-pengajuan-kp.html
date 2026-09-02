@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alur Pengajuan Kenaikan Pangkat - Website Kepegawaian.">
+  <title>Alur Pengajuan Kenaikan Pangkat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .kp-page { min-height: 100vh; background: #f5f8fc; }
+    .kp-hero {
+      background: linear-gradient(135deg, #0f4c81, #1677c8);
+      color: #fff; padding: 64px 20px; text-align: center;
+    }
+    .kp-hero .eyebrow { color: #dceeff; }
+    .kp-hero h1 { margin: 10px auto; font-size: clamp(30px, 5vw, 46px); }
+    .kp-hero p { max-width: 760px; margin: 0 auto; line-height: 1.7; opacity: .95; }
+    .kp-container { max-width: 1100px; margin: auto; padding: 0 20px; }
+    .breadcrumb { padding: 20px 0; color: #687386; font-size: 14px; }
+    .breadcrumb a { color: #0f4c81; text-decoration: none; }
+    .intro {
+      background: #fff; border-left: 5px solid #1677c8; border-radius: 12px;
+      padding: 24px; box-shadow: 0 8px 25px rgba(15,76,129,.07); margin-bottom: 30px;
+    }
+    .intro h2 { color: #0f4c81; margin-top: 0; }
+    .intro p { color: #5e6875; line-height: 1.75; margin-bottom: 0; }
+    .section-title { text-align: center; color: #0f4c81; margin: 38px 0 22px; }
+    .service-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+    }
+    .service-card {
+      background: #fff; border-radius: 18px; padding: 30px;
+      box-shadow: 0 10px 30px rgba(15,76,129,.09);
+      border: 1px solid #e7edf5; position: relative; overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 38px rgba(15,76,129,.14); }
+    .service-card::before {
+      content: ""; position: absolute; left: 0; top: 0; right: 0; height: 5px; background: #1677c8;
+    }
+    .service-icon {
+      width: 64px; height: 64px; display: grid; place-items: center;
+      border-radius: 16px; background: #eaf4ff; font-size: 30px; margin-bottom: 18px;
+    }
+    .service-card h3 { color: #0f4c81; margin: 0 0 12px; font-size: 22px; }
+    .service-card p { color: #667085; line-height: 1.7; min-height: 82px; }
+    .service-btn {
+      display: inline-flex; align-items: center; gap: 8px; margin-top: 8px;
+      padding: 12px 18px; border-radius: 9px; background: #1677c8; color: #fff;
+      text-decoration: none; font-weight: 700;
+    }
+    .service-btn:hover { background: #0f4c81; }
+    .steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 38px;
+    }
+    .step {
+      background: #fff; border: 1px solid #e7edf5; border-radius: 14px;
+      padding: 22px 16px; text-align: center;
+    }
+    .step-number {
+      width: 44px; height: 44px; margin: 0 auto 12px; border-radius: 50%;
+      display: grid; place-items: center; background: #1677c8; color: #fff; font-weight: 800;
+    }
+    .step h3 { font-size: 16px; color: #27364a; }
+    .step p { color: #697586; font-size: 14px; line-height: 1.6; }
+    .back { display: inline-block; margin: 0 0 45px; color: #0f4c81; text-decoration: none; font-weight: 700; }
+    @media (max-width: 800px) {
+      .service-grid, .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="kp-page">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Beranda">
+          <span class="brand-mark">KP</span>
+          <span>
+            <strong>Kepegawaian</strong>
+            <small>Portal Informasi Kepegawaian</small>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a href="index.html#beranda">Beranda</a>
+          <a href="index.html#profil">Profil</a>
+          <a href="index.html#layanan">Layanan Kepegawaian</a>
+          <a href="index.html#informasi">Informasi</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="kp-hero">
+      <div class="kp-container">
+        <span class="eyebrow">KENAIKAN PANGKAT (KP)</span>
+        <h1>Alur Pengajuan Kenaikan Pangkat</h1>
+        <p>Panduan singkat untuk melakukan pemutakhiran data, pengajuan, dan pemantauan status berkas Kenaikan Pangkat.</p>
+      </div>
+    </section>
+
+    <main class="kp-container">
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a> &nbsp;/&nbsp;
+        <a href="index.html#kp">Kenaikan Pangkat (KP)</a> &nbsp;/&nbsp;
+        Alur Pengajuan
+      </div>
+
+      <section class="intro">
+        <h2>Alur Pengajuan Kenaikan Pangkat</h2>
+        <p>Gunakan layanan digital berikut sesuai tahapan proses. Pastikan data kepegawaian telah diperbarui sebelum proses pengajuan, kemudian lakukan pemantauan status berkas secara berkala.</p>
+      </section>
+
+      <h2 class="section-title">Layanan Digital Kenaikan Pangkat</h2>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">👤</div>
+          <h3>Pemutakhiran Data</h3>
+          <p>Lakukan pemutakhiran dan pengecekan data kepegawaian melalui layanan ASN Digital BKN.</p>
+          <a class="service-btn" href="https://asndigital.bkn.go.id/login" target="_blank" rel="noopener noreferrer">
+            Buka ASN Digital BKN →
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">📋</div>
+          <h3>Pemantauan Status Berkas Kenaikan Pangkat</h3>
+          <p>Pantau perkembangan dan status berkas Kenaikan Pangkat melalui layanan Monitoring SIASN BKN.</p>
+          <a class="service-btn" href="https://monitoring-siasn.bkn.go.id/" target="_blank" rel="noopener noreferrer">
+            Pantau Status Berkas →
+          </a>
+        </article>
+      </div>
+
+      <h2 class="section-title">Gambaran Alur</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <h3>Pemutakhiran Data</h3>
+          <p>Perbarui dan pastikan data kepegawaian sudah sesuai.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">2</div>
+          <h3>Persiapan Berkas</h3>
+          <p>Siapkan dokumen persyaratan Kenaikan Pangkat.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">3</div>
+          <h3>Pengajuan</h3>
+          <p>Ajukan berkas melalui mekanisme layanan yang berlaku.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">4</div>
+          <h3>Pemantauan</h3>
+          <p>Pantau perkembangan status berkas melalui Monitoring SIASN.</p>
+        </article>
+      </div>
+
+      <a class="back" href="index.html">← Kembali ke Website Kepegawaian</a>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
